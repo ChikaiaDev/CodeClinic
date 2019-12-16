@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Girassol&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+
+}
+.navbar{
+    height: 100px;
+    font-size: large;
+    position: relative;
+    z-index: 100;
+}
+section{
+    height: 100vh;
+    padding-top: 100px;
+}
+h2{
+    font-size: 38px;
+    color: #222222;
+    font-weight: normal;
+    margin: 0px 0 25px 0;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px;
+}
+h3{
+    font-size: 26px;
+}
+.masthead {
+    margin-top: 0;
+    height: 70vh;
+    min-height: 500px;
+    background-image: url('images/client.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    h1,p{
+        color: #fff;
+        z-index: 1;
+        position: relative;
+    }
+
+    @media(max-width:720px) {
+    background: #ffffff;
+    min-height: 200px;
+    color: #000;
+    align-items: center;
+
+}
+a{
+    color: white;
+    padding: 10px;
+    border: white 1px solid;
+    border-radius: 10px;
+}
+}
+//about us page
+.contact_btn{
+    padding: 10px;
+    border: rgb(82, 137, 255) 2px solid;
+    color: rgb(82, 137, 255);
+    text-decoration: none;
+}
+.about_us img{
+    width: 300px; height:300px;border-radius:50%;overflow: hidden;
+}
+
+//services
+#services{
+    background-color: rgb(240, 240, 240);
+}
+
+//team
+.team_section{
+    display: flex;
+    flex-wrap: wrap;
+}
+.team_area{
+    width: 30%;
+}
+.team_area img{
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+}
+.team_area .title{
+    font-size: 20px;
+    color: darkgrey;
+}
+//contact page
+#contact{
+    background-color: rgb(56, 56, 56);
+    color: white;
+    bottom: 0;
+    .form-control{
+        background: transparent;
+        padding: 15px 16px;
+        border: 1px solid #ccc;
+        width: 100%;
+        height: 50px;
+        display: block;
+        border-radius: 4px;
+        font-size: 15px;
+        color: #aaa;
+        margin: 0 0 15px 0;
+        transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+    }
+    .text-area{
+        height: 230px;
+        resize: none;
+        overflow: auto;
+    }
+    .input-btn{
+        width: 175px;
+        height: 50px;
+        letter-spacing: 0px;
+        background: #00df56;
+        border-radius: 3px;
+        color: #ffffff;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 600;
+        border: 0px;
+        transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+    }
+}

@@ -1,0 +1,23 @@
+body {
+  background-color: brown;
+}
+
+.masthead {
+  height: 50vh;
+  min-height: 500px;
+  background-image: url("https://images.unsplash.com/photo-1551739440-5dd934d3a94a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+@media (max-width: 720px) {
+  .masthead {
+    background: #ffffff;
+    min-height: 200px;
+    color: #000;
+  }
+}
+/*# sourceMappingURL=custom.css.map */
