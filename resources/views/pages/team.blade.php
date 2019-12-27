@@ -5,9 +5,10 @@
     <div class="team_section clearfix">
       <div class="col-md-4 team_area">
         <div class="team_box wow fadeInDown delay-03s">
-          <div class="team_box_shadow"><a href="#"></a></div>
+          <div class="team_box_shadow"><a href="#"></a>
           <img src="images/caleb.jpg" alt="">
-          <ul>
+         </div>
+          <ul class="team-social-links">
             <li><a href="#" class="fa fa-twitter"></a></li>
             <li><a href="#" class="fa fa-facebook"></a></li>
             <li><a href="#" class="fa fa-pinterest"></a></li>
@@ -22,7 +23,7 @@
         <div class="team_box  wow fadeInDown delay-06s">
           <div class="team_box_shadow"><a href="#"></a></div>
           <img src="images/ian.jpg" alt="">
-          <ul>
+          <ul class="team-social-links">
             <li><a href="#" class="fa fa-twitter"></a></li>
             <li><a href="#" class="fa fa-facebook"></a></li>
             <li><a href="#" class="fa fa-pinterest"></a></li>
@@ -37,7 +38,7 @@
         <div class="team_box wow fadeInDown delay-09s">
           <div class="team_box_shadow"><a href="#"></a></div>
           <img src="images/collo.jpg" alt="">
-          <ul>
+          <ul class="team-social-links">
             <li><a href="#" class="fa fa-twitter"></a></li>
             <li><a href="#" class="fa fa-facebook"></a></li>
             <li><a href="#" class="fa fa-pinterest"></a></li>

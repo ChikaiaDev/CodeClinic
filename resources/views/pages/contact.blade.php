@@ -1,45 +1,26 @@
 <div class="container">
       <div class="contact_section">
         <h2 style="color:white;">Contact Us</h2>
-        <div class="row">
-          <div class="col-lg-4">
-
-          </div>
-          <div class="col-lg-4">
-
-          </div>
-          <div class="col-lg-4">
-
-          </div>
-        </div>
       </div>
+      <br>
       <div class="row">
-        <div class="col-lg-4 wow fadeInLeft">
-		 <div class="contact_info">
-                            <div class="detail">
-                                <h4>UNIQUE Infoway</h4>
-                                <p>104, Some street, Nairobi, KENYA</p>
-                            </div>
-                            <div class="detail">
-                                <h4>call us</h4>
-                                <p>+254 7XXX XXXXXX</p>
-                            </div>
-                            <div class="detail">
-                                <h4>Email us</h4>
-                                <p>support@kodeklinik.com</p>
-                            </div>
-                        </div>
+        <div class="col-md-6 contact-info">
+            <div class="follow"><b>Address:</b><i class="fa fa-map-marker"></i> Some Drive 1234567</div>
 
+            <div class="follow"><b>Phone:</b><i class="fa fa-Phone"></i> +254712345678</div>
 
+           <div class="follow"><b>Email:</b> <i class="fa fa-envelope-o"></i>Some Drive 1234567</div>
 
-          <ul class="social_links">
-            <li class="twitter animated bounceIn wow delay-02s"><a href="javascript:void(0)"><i class="fa fa-twitter"></i></a></li>
-            <li class="facebook animated bounceIn wow delay-03s"><a href="javascript:void(0)"><i class="fa fa-facebook"></i></a></li>
-            <li class="pinterest animated bounceIn wow delay-04s"><a href="javascript:void(0)"><i class="fa fa-pinterest"></i></a></li>
-            <li class="gplus animated bounceIn wow delay-05s"><a href="javascript:void(0)"><i class="fa fa-google-plus"></i></a></li>
-          </ul>
-        </div>
-        <div class="col-lg-8 wow fadeInLeft delay-06s">
+           <div class="follow"><label><b>Social:</b>
+           <a href="#"><i class="fa fa-facebook"></i></a>
+           <a href="#"><i class="fa fa-youtube-play"></i></a>
+           <a href="#"><i class="fa fa-twitter"></i></a>
+           <a href="#"><i class="fa fa-google-plus"></i></a>
+           </div>
+
+           </div>
+
+        <div class="col-md-6 wow fadeInLeft delay-06s">
           <form action="">
               <div class="form-group">
                 <input class="input-text form-control" type="text" name="" value="Your Name *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
