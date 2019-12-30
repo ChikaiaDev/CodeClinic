@@ -1,20 +1,23 @@
-@extends('layouts.admin')
+@extends('layouts.admin2')
 @section('content')
+
     @if(count($developers)>0)
     <br>
     <div class="col-md-6 col-sm-12 mb">
-        <div class="grey-panel pn donut-chart">
-          <div class="grey-header">
-            <h5>Developers</h5>
+        <div class="card">
+            <div class="card-header">
+            <h5 class="card-title">Developers</h5>
           </div>
-          <table class="table table-striped">
+          <div class="table-stats order-table ov-h">
+          <table class="table">
             <thead>
                 <tr>
-                  <td>ID</td>
-                  <td>Name</td>
-                  <td>Email</td>
-                  <td>Title</td>
-                  <td colspan="3">Action</td>
+                  <th class="serial">#</th>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Title</th>
+                <th>Field</th>
+                  <th colspan="3">Action</th>
                 </tr>
             </thead>
             <tbody>
@@ -23,7 +26,8 @@
                     <td>{{$developer->id}}</td>
                     <td>{{$developer->name}}</td>
                     <td>{{$developer->email}}</td>
-                    <td>{{$developer->title}}</td>
+                    <td></td>
+                    <td>{{$developer->category? $developer->category->name : 'Uncategorized' }}</td>
 
                 <td><a href="/developer/{{$developer->id}}/edit" class="btn btn-primary">Edit</a></td>
                     <td>
@@ -40,14 +44,14 @@
                 @endforeach
             </tbody>
           </table>
-          <div class="row">
-            <div class="col-sm-6 col-xs-6 goleft">
-              <p>Number of<br/>Developers:</p>
-            </div>
-            <div class="col-sm-6 col-xs-6">
-            <h2>{{$count}}</h2>
-            </div>
           </div>
+          <footer class="twt-footer">
+            <a href="#"><i class="fa fa-user"></i></a>
+            No. of Developers:
+            <span class="pull-right">
+                {{$count}}
+            </span>
+        </footer>
         </div>
         <!-- /grey-panel -->
       </div>

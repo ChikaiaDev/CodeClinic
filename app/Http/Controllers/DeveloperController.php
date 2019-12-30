@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Developer;
+use App\Category;
 
 class DeveloperController extends Controller
 {
@@ -16,7 +17,8 @@ class DeveloperController extends Controller
     {
         $developers = Developer::all();
         $count = Developer::count();
-        return view ('admin.developers.index', compact('developers','count'));
+        $categories = Category::all();
+        return view ('admin.developers.index', compact('developers','count','categories'));
 
     }
 
@@ -27,7 +29,8 @@ class DeveloperController extends Controller
      */
     public function create()
     {
-        return view('admin.developers.create');
+        $categories = Category::all();
+        return view('admin.developers.create', compact('categories'));
     }
 
     /**
@@ -42,7 +45,6 @@ class DeveloperController extends Controller
             'name'=>'required',
             'dob'=> 'required',
             'email' => 'required',
-            'title' => 'required',
             'bio' => 'required',
             'profile_pic'=>'image|nullable|max:1999'
           ]);
@@ -68,10 +70,10 @@ class DeveloperController extends Controller
             'name'=>$request->name,
             'dob'=>$request->dob,
             'email'=>$request->email,
-            'title'=>$request->title,
             'bio'=>$request->bio,
             'profile_pic'=>$fileNameToStore
           ]);
+          $developer->category_id = $request->category_id;
           $developer->save();
 
 
@@ -99,7 +101,9 @@ class DeveloperController extends Controller
      */
     public function edit($id)
     {
-        //
+        $categories = Category::all();
+        $developer = Developer::find($id);
+        return view('admin.developers.edit',compact('categories','developer'));
     }
 
     /**
@@ -115,21 +119,19 @@ class DeveloperController extends Controller
             'name'=>'required',
             'dob'=> 'required',
             'email' => 'required',
-            'status' => 'required',
-            'title' => 'required',
+            'category_id' => 'required',
             'bio' => 'required'
           ]);
           $developer = Developer::find($id);
           $developer->name = $request->get('name');
           $developer->dob = $request->get('dob');
           $developer->email = $request->get('email');
-          $developer->status = $request->get('status');
-          $developer->title = $request->get('title');
+          $developer->category_id = $request->get('category_id');
           $developer->bio = $request->get('bio');
           $developer->save();
 
 
-          return redirect('/developers')->with('success', 'Developer details has been updated');
+          return redirect('/developer')->with('success', 'Developer details has been updated');
     }
 
     /**
@@ -143,6 +145,6 @@ class DeveloperController extends Controller
         $developer = Developer::find($id);
         $developer->delete();
 
-        return redirect('/developers')->with('success', 'Developer has been deleted Successfully');
+        return redirect('/developer')->with('success', 'Developer has been deleted Successfully');
     }
 }

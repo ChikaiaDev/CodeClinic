@@ -10,8 +10,11 @@ class Developer extends Model
         'name',
         'dob',
         'email',
-        'title',
         'bio',
-        'profile_pic'
+        'profile_pic',
+        'category_id'
       ];
+      public function category() {
+        return $this->belongsTo('App\Category');
+      }
 }

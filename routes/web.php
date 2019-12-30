@@ -22,3 +22,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
 Route::resource('developer', 'DeveloperController');
+
+
+//categories route
+Route::resource('category', 'CategoryController');
