@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style=" position: fixed;top: 0;width: 100%; margin-bottom:0px;">
     <div class="container">
-    <img src="{{ asset('images/code.png') }}"style="height:50px;width:50px; margin:10px;">
-        <a class="navbar-brand" href="/">Kodeklinik</a>
+      <a href="#home"><img src="{{ asset('images/kk.png') }}"style="height:50px;width:250px; " alt="KodeKlinik"></a>
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
