@@ -97,7 +97,7 @@
         <header id="header" class="header">
             <div class="top-left">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="home"><img src="{{ asset('images/code.png') }}" alt="Logo" style="width:40px;"><b>Kode-Admin</b></a>
+                    <a class="navbar-brand" href="home"><img src="{{ asset('images/admincenter.png') }}" alt="Logo" style="width:280px;"></a>
                     <a class="navbar-brand hidden" href="./"><img src="{{ asset('images/code.png') }}" alt="Logo"></a>
                     <a id="menuToggle" class="menutoggle"><i class="fa fa-bars"></i></a>
                 </div>
